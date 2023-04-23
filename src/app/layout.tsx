@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "Asim Kachhap",
@@ -12,7 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header>
+          <Navbar />
+        </header>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
