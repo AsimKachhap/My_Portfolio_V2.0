@@ -17,7 +17,7 @@ export default function RootLayout({
         <header>
           <Navbar />
         </header>
-        <main>{children}</main>
+        <main className="lg:px-24">{children}</main>
       </body>
     </html>
   );
